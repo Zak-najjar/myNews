@@ -1,0 +1,27 @@
+@use '../config/colors.scss' as colors;
+@use '../utilities/spacing.scss' as spaces;
+
+
+.article__category {
+  background-color: colors.$color-primary;
+  color: colors.$color-white;
+  padding: 5px 10px;
+  margin-left: 10px;
+  text-decoration: none !important;
+
+}
+.article__title {
+  font-size: 20px;
+  display: inline;
+}
+
+a.article__link {
+  img {
+    width: 100%;
+  }
+  text-decoration: none;
+  color: #000;
+  &:hover .article__title {
+    text-decoration: underline;
+  }
+}

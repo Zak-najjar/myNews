@@ -1,0 +1,163 @@
+@use 'sass:color';
+@use '../config/colors.scss' as colors;
+@use '../utilities/spacing.scss' as spaces;
+
+
+header {
+  .navbar {
+    padding: 10px !important;
+    border-bottom: 1px solid colors.$color-gray;
+    background-color: colors.$color-white;
+    &-brand {
+      font-size: 30px;
+      font-weight: 400;
+      color: colors.$color-primary;
+    }
+
+    a.nav-link {
+      color: colors.$color-content;
+      font-size: 20px;
+      transition: all 0.3s ease;
+      margin-right: spaces.spacing('casual') - 4px;
+      &:hover {
+        color: colors.$color-primary;
+        text-decoration: underline;
+      }
+    }
+
+    input[type='search'] {
+      border-color: colors.$color-gray;
+      border-radius: 5px;
+    }
+
+
+    .navbar__login {
+      margin-left: spaces.spacing('small');
+      position: relative;
+      cursor: pointer;
+
+        i.fa-user {
+          color: colors.$color-secondery;
+        }
+
+      .navbar__login-container {
+        width: 250px;
+        height: 80px;
+        position: absolute;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(42%) translateY(20%);
+        background-color: colors.$color-white;
+        border: 1px solid colors.$color-secondery;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        visibility: hidden;
+        &::before {
+          content: "";
+          width: 20px;
+          height: 20px;
+          position:absolute;
+          top: -14%;
+          transform: rotate(45deg);
+          border-top: 1px solid colors.$color-secondery;
+          border-left: 1px solid colors.$color-secondery;
+          background-color: colors.$color-white;
+        }
+
+        a {
+          font-size: initial;
+        }
+      }
+      &:hover  .navbar__login-container{
+        visibility: visible;
+      }
+
+      
+    }
+
+
+    form {
+      align-items: center;
+      a {
+        i.fa-magnifying-glass {
+          color: colors.$color-primary;
+          font-size: spaces.spacing('normal');
+        }
+      }
+    }
+
+  }
+
+  .header__news {
+    margin-top: spaces.spacing('extra-wide') + spaces.spacing('normal');
+
+    #NewsCarousel {
+      &::after {
+        content: "";
+        width: 20px;
+        height: 200px;
+        background-color: colors.$color-primary;
+        position: absolute;
+        left: -10px;
+        top: 150px;
+      }
+    }
+
+    .carousel-item {
+      &:hover h5 {
+        text-decoration: underline;
+      }
+      .carousel__title {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-color: rgba( #000000, 50%);
+        width: 100%;
+        padding: 20px 10px 70px;
+          h5 {
+            color: colors.$color-gray-light;
+            font-weight: 400;
+            font-size: 22px;
+            position: relative;
+
+            &::after {
+              content: "";
+              width: 5px;
+              height: 85px;
+              background-color: colors.$color-primary;
+              position: absolute;
+              top: -10px;
+              left: 250px;
+            }
+          }
+      }
+
+    }
+
+    .carousel-indicators {
+      right: initial;
+      left: -7%;
+      button {
+        width: 20px;
+        height: 20px;
+        line-height: 15px;
+        display: block;
+        color: colors.$color-black ;
+        text-indent:0;
+      }
+    }
+
+
+
+
+    .header__news-sideCards {
+      .cards {
+        margin-bottom: spaces.spacing('wide') - spaces.spacing('small');
+      }
+    }
+  }
+}
+
+

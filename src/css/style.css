@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap");
+header .navbar {
+  padding: 10px !important;
+  border-bottom: 1px solid #B1AEAE;
+  background-color: #fff;
+}
+header .navbar-brand {
+  font-size: 30px;
+  font-weight: 400;
+  color: #B80000;
+}
+header .navbar a.nav-link {
+  color: #000000;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  margin-right: 20px;
+}
+header .navbar a.nav-link:hover {
+  color: #B80000;
+  text-decoration: underline;
+}
+header .navbar input[type=search] {
+  border-color: #B1AEAE;
+  border-radius: 5px;
+}
+header .navbar .navbar__login {
+  margin-left: 8px;
+  position: relative;
+  cursor: pointer;
+}
+header .navbar .navbar__login i.fa-user {
+  color: #B1AEAE;
+}
+header .navbar .navbar__login .navbar__login-container {
+  width: 250px;
+  height: 80px;
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(42%) translateY(20%);
+  background-color: #fff;
+  border: 1px solid #B1AEAE;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  visibility: hidden;
+}
+header .navbar .navbar__login .navbar__login-container::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -14%;
+  transform: rotate(45deg);
+  border-top: 1px solid #B1AEAE;
+  border-left: 1px solid #B1AEAE;
+  background-color: #fff;
+}
+header .navbar .navbar__login .navbar__login-container a {
+  font-size: initial;
+}
+header .navbar .navbar__login:hover .navbar__login-container {
+  visibility: visible;
+}
+header .navbar form {
+  align-items: center;
+}
+header .navbar form a i.fa-magnifying-glass {
+  color: #B80000;
+  font-size: 32px;
+}
+header .header__news {
+  margin-top: 96px;
+}
+header .header__news #NewsCarousel::after {
+  content: "";
+  width: 20px;
+  height: 200px;
+  background-color: #B80000;
+  position: absolute;
+  left: -10px;
+  top: 150px;
+}
+header .header__news .carousel-item:hover h5 {
+  text-decoration: underline;
+}
+header .header__news .carousel-item .carousel__title {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 20px 10px 70px;
+}
+header .header__news .carousel-item .carousel__title h5 {
+  color: #F0F0F0;
+  font-weight: 400;
+  font-size: 22px;
+  position: relative;
+}
+header .header__news .carousel-item .carousel__title h5::after {
+  content: "";
+  width: 5px;
+  height: 85px;
+  background-color: #B80000;
+  position: absolute;
+  top: -10px;
+  left: 250px;
+}
+header .header__news .carousel-indicators {
+  right: initial;
+  left: -7%;
+}
+header .header__news .carousel-indicators button {
+  width: 20px;
+  height: 20px;
+  line-height: 15px;
+  display: block;
+  color: #000000;
+  text-indent: 0;
+}
+header .header__news .header__news-sideCards .cards {
+  margin-bottom: 40px;
+}
+
+.article__category {
+  background-color: #B80000;
+  color: #fff;
+  padding: 5px 10px;
+  margin-left: 10px;
+  text-decoration: none !important;
+}
+
+.article__title {
+  font-size: 20px;
+  display: inline;
+}
+
+a.article__link img {
+  width: 100%;
+}
+a.article__link {
+  text-decoration: none;
+  color: #000;
+}
+a.article__link:hover .article__title {
+  text-decoration: underline;
+}
+
+section.news {
+  padding: 48px 0;
+}
+section.news .section__body img {
+  max-height: 170px;
+}
+section.news .section__btn {
+  text-align: center;
+  margin-top: 48px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Almarai", sans-serif !important;
+}
+
+.btn--custom {
+  font-size: 20px;
+  color: #fff;
+  background-color: #B80000;
+  padding: 2px 30px;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  text-decoration: none;
+  border: 1px solid #B80000;
+}
+.btn--custom:hover {
+  background-color: #fff;
+  color: #B80000;
+  border: 1px solid #B80000;
+}
+
+.section__title {
+  line-height: 50px;
+  color: #000000;
+  position: relative;
+  margin-bottom: 60px;
+  margin-right: 32px;
+}
+.section__title::before {
+  content: "";
+  width: 15px;
+  height: 100%;
+  background-color: #B80000;
+  position: absolute;
+  right: -30px;
+  top: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,38 @@
+@use '../config/colors.scss' as colors;
+@use './spacing.scss' as spaces;
+
+@mixin custom-btn {
+  font-size: 20px;
+  color: colors.$color-white ;
+  background-color: colors.$color-primary ;
+  padding: calc(spaces.spacing('extra-small') / 2) calc(spaces.spacing('normal') - 2px) ;
+  transition: all 0.3s ease ;
+  border-radius: 5px;
+  text-decoration: none;
+  border: 1px solid colors.$color-primary ;
+  &:hover {
+    background-color: colors.$color-white ;
+    color: colors.$color-primary ;
+    border: 1px solid colors.$color-primary ;
+  }
+}
+
+
+@mixin section-title {
+  line-height: 50px;
+  color: colors.$color-black;
+  position: relative;
+  margin-bottom: spaces.spacing('extra-wide') - spaces.spacing('extra-small');
+  margin-right: spaces.spacing('normal');
+
+
+  &::before {
+    content: "";
+    width: 15px;
+    height: 100%;
+    background-color: colors.$color-primary;
+    position: absolute;
+    right: -30px;
+    top: 0;
+  }
+}

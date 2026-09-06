@@ -1,0 +1,26 @@
+@use '../config/layout.scss' as layouts;
+@use 'sass:meta';
+@use 'sass:map';
+
+
+$spacing: (
+  'extra-small': layouts.$standared-space * 0.25, // 4px
+  'small': layouts.$standared-space * 0.5, // 8px
+  'standard': layouts.$standared-space * 0.625, // 10px
+  'basic': layouts.$standared-space, // 16px
+  'casual': layouts.$standared-space + (layouts.$standared-space * 0.5), //24px
+  'normal': layouts.$standared-space * 2, // 32px
+  'wide': layouts.$standared-space * 3, // 48px
+  'extra-wide': layouts.$standared-space * 4, // 64px
+  
+);
+
+@function spacing($varient: 'basic') {
+  $value: map.get($spacing, $varient);
+
+  @if (meta.type-of($value) == number) {
+    @return $value;
+  }
+
+  @error "Unknown spacing variant: #{$varient}";
+}
