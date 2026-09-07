@@ -120,7 +120,7 @@ header .header__news .carousel-indicators button {
   color: #000000;
   text-indent: 0;
 }
-header .header__news .header__news-sideCards .cards {
+header .header__news .header__news-sideCards .list {
   margin-bottom: 40px;
 }
 
@@ -149,7 +149,7 @@ a.article__link:hover .article__title {
 }
 
 section.news {
-  padding: 48px 0;
+  padding: 50px;
 }
 section.news .section__body img {
   max-height: 170px;
@@ -157,6 +157,50 @@ section.news .section__body img {
 section.news .section__btn {
   text-align: center;
   margin-top: 48px;
+}
+
+.most-read {
+  background-color: #F0F0F0;
+  padding: 50px;
+}
+.most-read .card__news {
+  background-color: #fff;
+  padding: 50px;
+  margin: 30px;
+}
+.most-read .card__text .article__title {
+  display: block;
+  font-size: 30px;
+}
+.most-read .card__text p {
+  font-size: 14px;
+  margin: 35px auto;
+}
+.most-read .card__text time {
+  color: #B1AEAE;
+  font-size: 16px;
+}
+.most-read .card__img {
+  position: relative;
+  margin-bottom: 20px;
+}
+.most-read .card__img::after {
+  content: "";
+  width: 250px;
+  height: 30px;
+  background-color: #B80000;
+  position: absolute;
+  bottom: -15px;
+  right: 80px;
+}
+
+.opinions {
+  padding: 50px;
+}
+.opinions .opinions__card {
+  background-color: rgba(184, 0, 0, 0.3);
+  padding: 20px 10px;
+  margin-top: 25px;
 }
 
 * {
@@ -188,7 +232,7 @@ body {
   line-height: 50px;
   color: #000000;
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   margin-right: 32px;
 }
 .section__title::before {

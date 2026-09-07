@@ -1,11 +1,7 @@
 @use '../config/colors.scss' as colors;
 
-@use '../utilities/spacing.scss' as spaces;
-
-
-
 section.news {
-  padding: spaces.spacing(wide) 0;
+  padding: 48px 0;
   .section__body {
     img {
       max-height: 170px;
@@ -13,6 +9,6 @@ section.news {
   }
   .section__btn {
     text-align: center;
-    margin-top: spaces.spacing('wide');
+    margin-top: 48px;
   }
 }

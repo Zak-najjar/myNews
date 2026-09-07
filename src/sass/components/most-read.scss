@@ -1,0 +1,44 @@
+@use '../config/colors.scss' as colors;
+
+
+
+.most-read {
+  background-color: colors.$color-gray-light;
+  padding: 50px;
+
+  .card {
+    &__news{
+      background-color: #fff;
+      padding: 50px;
+      margin: 30px;
+    }
+
+    &__text {
+      .article__title {
+        display: block;
+        font-size: 30px;
+      }
+      p {
+        font-size: 14px;
+        margin: 35px auto;
+      }
+      time {
+        color: colors.$color-gray;
+        font-size: 16px;
+      }
+    }
+    &__img {
+      position: relative;
+      margin-bottom: 20px;
+      &::after {
+        content: "";
+        width: 250px;
+        height: 30px;
+        background-color: colors.$color-primary;
+        position: absolute;
+        bottom: -15px;
+        right: 80px;
+      }
+    }
+  }
+}

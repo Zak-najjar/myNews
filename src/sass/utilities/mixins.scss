@@ -1,11 +1,10 @@
 @use '../config/colors.scss' as colors;
-@use './spacing.scss' as spaces;
 
 @mixin custom-btn {
   font-size: 20px;
   color: colors.$color-white ;
   background-color: colors.$color-primary ;
-  padding: calc(spaces.spacing('extra-small') / 2) calc(spaces.spacing('normal') - 2px) ;
+  padding: 2px 30px;
   transition: all 0.3s ease ;
   border-radius: 5px;
   text-decoration: none;
@@ -22,8 +21,8 @@
   line-height: 50px;
   color: colors.$color-black;
   position: relative;
-  margin-bottom: spaces.spacing('extra-wide') - spaces.spacing('extra-small');
-  margin-right: spaces.spacing('normal');
+  margin-bottom: 60px;
+  margin-right: 32px;
 
 
   &::before {

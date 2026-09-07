@@ -1,7 +1,5 @@
 @use 'sass:color';
 @use '../config/colors.scss' as colors;
-@use '../utilities/spacing.scss' as spaces;
-
 
 header {
   .navbar {
@@ -18,7 +16,7 @@ header {
       color: colors.$color-content;
       font-size: 20px;
       transition: all 0.3s ease;
-      margin-right: spaces.spacing('casual') - 4px;
+      margin-right: 20px;
       &:hover {
         color: colors.$color-primary;
         text-decoration: underline;
@@ -32,7 +30,7 @@ header {
 
 
     .navbar__login {
-      margin-left: spaces.spacing('small');
+      margin-left: 8px;
       position: relative;
       cursor: pointer;
 
@@ -83,16 +81,14 @@ header {
       a {
         i.fa-magnifying-glass {
           color: colors.$color-primary;
-          font-size: spaces.spacing('normal');
+          font-size: 32px;
         }
       }
     }
-
   }
 
   .header__news {
-    margin-top: spaces.spacing('extra-wide') + spaces.spacing('normal');
-
+    margin-top: 96px;
     #NewsCarousel {
       &::after {
         content: "";
@@ -154,10 +150,8 @@ header {
 
     .header__news-sideCards {
       .cards {
-        margin-bottom: spaces.spacing('wide') - spaces.spacing('small');
+        margin-bottom: 40px;
       }
     }
   }
 }
-
-
