@@ -1,0 +1,52 @@
+@use '../config/colors.scss' as colors;
+
+
+
+section.videos {
+  background-color: colors.$color-black;
+  padding: 50px;
+
+  .section__title {
+    color: colors.$color-white;
+  }
+
+
+
+  .slide {
+    &__img {
+      width: 100%;
+      object-fit: cover;
+      max-height: 250px;
+      position: relative;
+      i {
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        transform: translate(50%, -50%);
+        color: colors.$color-white;
+        font-size: 60px;
+      }
+    }
+
+    &__text {
+      margin-top: 40px;
+      .article__title {
+        color: colors.$color-white;
+      }
+    }
+  }
+  
+  .swiper {
+    padding: 20px 0 50px;
+    &-pagination {
+      bottom: -5px;
+
+      &-bullet {
+        width: 20px;
+        height: 20px;
+        background-color: colors.$color-gray;
+        margin: 10px;
+      }
+    }
+  }
+}

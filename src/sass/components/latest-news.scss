@@ -1,0 +1,13 @@
+@use '../config/colors.scss' as colors;
+
+
+section.latest-news {
+  padding: 50px;
+
+  .card__text {
+    p {
+      color: colors.$color-black;
+      margin: 10px 0;
+    }
+  }
+}
