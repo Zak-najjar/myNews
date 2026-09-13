@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap");
 header .navbar {
+  transition: all 0.3s ease;
   padding: 10px !important;
   border-bottom: 1px solid #B1AEAE;
   background-color: #fff;
@@ -124,6 +125,11 @@ header .header__news .header__news-sideCards .list {
   margin-bottom: 40px;
 }
 
+header .navbar-small {
+  padding: 0 !important;
+  transition: all 0.3s ease-in-out;
+}
+
 .article__category {
   background-color: #B80000;
   color: #fff;
@@ -149,7 +155,7 @@ a.article__link:hover .article__title {
 }
 
 section.news {
-  padding: 48px 0;
+  padding: 50px;
 }
 section.news .section__body img {
   max-height: 170px;
@@ -233,9 +239,6 @@ section.videos .section__title {
   color: #fff;
 }
 section.videos .slide__img {
-  width: 100%;
-  object-fit: cover;
-  max-height: 250px;
   position: relative;
 }
 section.videos .slide__img i {
@@ -245,6 +248,11 @@ section.videos .slide__img i {
   transform: translate(50%, -50%);
   color: #fff;
   font-size: 60px;
+}
+section.videos .slide__img img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 250px;
 }
 section.videos .slide__text {
   margin-top: 40px;
@@ -327,6 +335,10 @@ body {
   font-family: "Almarai", sans-serif !important;
 }
 
+img {
+  width: 100%;
+}
+
 .btn--custom {
   font-size: 20px;
   color: #fff;
@@ -347,8 +359,8 @@ body {
   line-height: 50px;
   color: #000000;
   position: relative;
-  margin-bottom: 60px;
-  margin-right: 32px;
+  margin-bottom: 40px;
+  margin-right: 30px;
 }
 .section__title::before {
   content: "";
@@ -371,6 +383,115 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 1400px) {
+  header .header__news .carousel-item .carousel__title h5 {
+    font-size: 18px;
+  }
+  header .header__news .carousel-item .carousel__title h5::after {
+    left: 200px;
+  }
+  .article__title {
+    font-size: 18px;
+  }
+  .article__category {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1200px) {
+  header .header__news #NewsCarousel::after {
+    height: 170px;
+    top: 100px;
+  }
+  header .header__news .carousel-item .carousel__title h5 {
+    font-size: 14px;
+  }
+  header .header__news .carousel-item .carousel__title h5::after {
+    left: 200px;
+  }
+  .article__title {
+    font-size: 14px;
+  }
+  .article__category {
+    font-size: 14px;
+  }
+}
+@media (max-width: 992px) {
+  header .header__news .carousel-item .carousel__title h5 {
+    font-size: 18px;
+  }
+  header .header__news .carousel-item .carousel__title h5::after {
+    display: none;
+  }
+  header .header__news .carousel-indicators {
+    right: 0;
+    left: 0;
+  }
+  header .header__news-sideCards {
+    margin-top: 40px;
+  }
+  header .header__news-sideCards .list .article__text .article__title {
+    font-size: 18px;
+  }
+  section.most-read .card__news {
+    padding: 25px;
+  }
+  section.most-read .card__news .card__text .article__title {
+    font-size: 16px;
+  }
+  section.most-read .card__news .card__text p {
+    font-size: 14px;
+    margin: 25px auto;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  section.most-read .card__news .card__text time {
+    font-size: 12px;
+  }
+  section.most-read .card__news .card__img::after {
+    height: 20px;
+    bottom: -10px;
+  }
+  section.opinions .opinions__card {
+    padding: 15px 7px;
+  }
+  section.opinions .opinions__card .user__info {
+    margin-top: 15px;
+  }
+  section.opinions .opinions__card .user__info img {
+    width: 85px;
+  }
+  section.latest-news .card__text .article__category {
+    font-size: 12px;
+  }
+  section.latest-news .card__text p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  header .header__news #NewsCarousel::after {
+    display: none;
+  }
+  section.most-read .card__news {
+    padding: 15px;
+  }
+  section.most-read .card__news .card__img::after {
+    display: none;
+  }
+  footer {
+    text-align: center;
+  }
+  footer .footer__title {
+    color: #B80000;
+    margin-top: 20px;
+  }
+  footer .footer__title::after {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

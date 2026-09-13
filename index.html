@@ -19,9 +19,9 @@
 <body>
   <header>
     <div class="container">
-      <nav class="navbar navbar-expand-lg fixed-top">
+      <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
         <div class="container">
-          <a class="navbar-brand" href="#">أخباري</a>
+          <a class="navbar-brand" href="index.html">أخباري</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -46,8 +46,11 @@
               </li>
             </ul>
             <div class="navbar__login">
-              <i class="fa-solid fa-2x fa-user"></i>
-              <div class="navbar__login-container">
+              <div class="text-center d-lg-none my-3">
+                <a href="#" class="btn--custom fs-6 w-50 d-block mx-auto">تسجيل الدخول</a>
+              </div>
+              <i class="fa-solid fa-2x fa-user d-none d-lg-block"></i>
+              <div class="navbar__login-container d-none d-lg-flex">
                 <a href="#" class="btn--custom">تسجيل الدخول</a>
               </div>
             </div>
@@ -444,7 +447,7 @@
                 </div>
               </a>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide ">
               <a href="article.html" class="article__link">
                 <div class="slide__img">
                   <img src="./src/images/picture-12.jpg" alt="...">
@@ -457,7 +460,7 @@
                 </div>
               </a>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide ">
               <a href="article.html" class="article__link">
                 <div class="slide__img">
                   <img src="./src/images/picture-3.jpg" alt="...">
@@ -470,7 +473,7 @@
                 </div>
               </a>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide ">
               <a href="article.html" class="article__link">
                 <div class="slide__img">
                   <img src="./src/images/picture-11.jpg" alt="...">
@@ -483,7 +486,7 @@
                 </div>
               </a>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide ">
               <a href="article.html" class="article__link">
                 <div class="slide__img">
                   <img src="./src/images/picture-10.jpg" alt="...">
@@ -496,7 +499,7 @@
                 </div>
               </a>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide ">
               <a href="article.html" class="article__link">
                 <div class="slide__img">
                   <img src="./src/images/picture-16.jpg" alt="...">
@@ -662,7 +665,7 @@
             </li>
           </ul>
           <div class="text-center mt-3"><a href="index.html" class="footer__brand">أخباري</a></div>
-          
+
           <div class="copyRight text-center mt-3">
             جميع الحقوق محفوظة @ <span id="currentYear"></span>
           </div>
@@ -672,6 +675,7 @@
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
   <script src="./src/js/index.js"></script>
+  <script src="./src/js/swiper.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>

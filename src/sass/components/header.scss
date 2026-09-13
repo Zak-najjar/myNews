@@ -3,6 +3,7 @@
 
 header {
   .navbar {
+    transition: all 0.3s ease;
     padding: 10px !important;
     border-bottom: 1px solid colors.$color-gray;
     background-color: colors.$color-white;
@@ -153,5 +154,14 @@ header {
         margin-bottom: 40px;
       }
     }
+  }
+}
+
+
+
+header {
+  .navbar-small {
+    padding: 0 !important;
+    transition: all 0.3s ease-in-out;
   }
 }

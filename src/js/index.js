@@ -1,18 +1,12 @@
 
+document.getElementById("currentYear").innerHTML = new Date().getFullYear();
 
-var swiper = new Swiper(".swiper", {
-  slidesPerView: 3,
-  autoplay: true,
-  loop: true,
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
+window.addEventListener("scroll", function () {
+  const navbar = document.getElementById("navbar");
+
+  if (this.scrollY > 100) {
+    navbar.classList.add("navbar-small");
+  } else {
+    navbar.classList.remove("navbar-small");
+  }
 });
-
-
-
-document.getElementById('currentYear').innerHTML = new Date().getFullYear();
-
-
