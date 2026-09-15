@@ -67,9 +67,13 @@ header {
 
         a {
           font-size: initial;
+          visibility: hidden;
         }
       }
       &:hover  .navbar__login-container{
+        visibility: visible;
+      }
+      &:hover .navbar__login-container a {
         visibility: visible;
       }
 

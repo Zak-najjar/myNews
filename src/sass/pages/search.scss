@@ -1,0 +1,123 @@
+@use "../config/colors.scss" as colors;
+
+.search {
+  .search__header {
+    margin-top: 100px;
+
+    .search__bar {
+      form {
+        display: flex;
+        input {
+          padding: 8px 15px;
+          border-radius: 5px;
+          border: 1px solid colors.$color-gray;
+          width: 75%;
+        }
+        button {
+          margin-right: 25px;
+        }
+      }
+    }
+
+    .search__navigation {
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-between;
+      span {
+        font-size: 20px;
+      }
+      .search__filter {
+        span {
+          margin-left: 10px;
+          font-size: 20px;
+        }
+        select {
+          padding: 5px 15px;
+          border: 1px solid colors.$color-gray;
+          border-radius: 5px;
+          height: 35px;
+        }
+      }
+    }
+  }
+
+  .search__body {
+    .bag {
+      padding: 25px;
+      border-bottom: 1px dotted colors.$color-gray;
+      h4.article__title {
+        font-size: 22px;
+        margin-bottom: 8px;
+        display: block;
+      }
+
+      p {
+        font-size: 16px;
+        margin-top: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+      }
+
+      time {
+        font-size: 16px;
+        color: colors.$color-gray;
+      }
+    }
+  }
+  .more-results {
+    margin: 75px 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .search {
+    .search__body {
+      .bag {
+        padding: 20px;
+        h4.article__title {
+          font-size: 18px;
+        }
+
+        p {
+          font-size: 12px;
+          margin-top: 0;
+        }
+
+        time {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .search {
+    .search__header {
+      .search__bar {
+        form {
+          input {
+            width: 60%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .search {
+    .search__header {
+      .search__bar {
+        form {
+          input {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -10,6 +10,7 @@
     integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="src/css/search.css">
   <title>صفحة مقالة</title>
 </head>
 
@@ -48,22 +49,172 @@
               </div>
               <i class="fa-solid fa-2x fa-user d-none d-lg-block"></i>
               <div class="navbar__login-container d-none d-lg-flex">
-                <a href="#" class="btn--custom">تسجيل الدخول</a>
+                <a href="login.html" class="btn--custom">تسجيل الدخول</a>
               </div>
             </div>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="ابحث ..." aria-label="Search" />
-              <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-            </form>
           </div>
         </div>
       </nav>
     </div>
   </header>
   <main>
+    <div class="search">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <section class="search__header">
+              <div class="search__bar">
+                <form action="./search.html">
+                  <input type="text" name="search" id="search" placeholder="ابحث هنا ...">
+                  <button type="submit" class="btn btn--custom">بحث</button>
+                </form>
 
+              </div>
+              <div class="search__navigation">
+                <span>أفضل 50 نتيجة</span>
+                <div class="search__filter">
+                  <span class="filter__label">الترتيب:</span>
+                  <select name="filter" id="filter">
+                    <option value="History" selected>التاريخ</option>
+                    <option value="relevance">الصلة</option>
+                  </select>
+                </div>
+              </div>
+              <hr>
+            </section>
+            <section class="search__body">
+              <div class="bag">
+                <a href="#" class="article__link">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="bag__img">
+                        <img src="./src/images/picture-12.jpg" alt="...">
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <h4 class="article__title">لوريم إيبسوم هو ببساطة نص شكلي</h4>
+                      <p>لوريم إيبسوم هو ببساطة نص شكلي (بمعنى أن
+                        الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر.
+                        كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر
+                        عندما قامت مطبعة
+                      </p>
+                      <time datetime="السبت 12/9/2026">السبت 12/9/2026</time>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="bag">
+                <a href="#" class="article__link">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="bag__img">
+                        <img src="./src/images/picture-15.jpg" alt="...">
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <h4 class="article__title">لوريم إيبسوم هو ببساطة نص شكلي</h4>
+                      <p>لوريم إيبسوم هو ببساطة نص شكلي (بمعنى أن
+                        الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر.
+                        كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر
+                        عندما قامت مطبعة
+                      </p>
+                      <time datetime="السبت 12/9/2026">السبت 12/9/2026</time>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="bag">
+                <a href="#" class="article__link">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="bag__img">
+                        <img src="./src/images/picture-16.jpg" alt="...">
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <h4 class="article__title">لوريم إيبسوم هو ببساطة نص شكلي</h4>
+                      <p>لوريم إيبسوم هو ببساطة نص شكلي (بمعنى أن
+                        الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر.
+                        كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر
+                        عندما قامت مطبعة
+                      </p>
+                      <time datetime="السبت 12/9/2026">السبت 12/9/2026</time>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="bag">
+                <a href="#" class="article__link">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="bag__img">
+                        <img src="./src/images/picture-1.jpg" alt="...">
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <h4 class="article__title">لوريم إيبسوم هو ببساطة نص شكلي</h4>
+                      <p>لوريم إيبسوم هو ببساطة نص شكلي (بمعنى أن
+                        الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر.
+                        كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر
+                        عندما قامت مطبعة
+                      </p>
+                      <time datetime="السبت 12/9/2026">السبت 12/9/2026</time>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="bag">
+                <a href="#" class="article__link">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="bag__img">
+                        <img src="./src/images/picture-14.jpg" alt="...">
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <h4 class="article__title">لوريم إيبسوم هو ببساطة نص شكلي</h4>
+                      <p>لوريم إيبسوم هو ببساطة نص شكلي (بمعنى أن
+                        الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر.
+                        كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر
+                        عندما قامت مطبعة
+                      </p>
+                      <time datetime="السبت 12/9/2026">السبت 12/9/2026</time>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="bag">
+                <a href="#" class="article__link">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="bag__img">
+                        <img src="./src/images/picture-11.jpg" alt="...">
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <h4 class="article__title">لوريم إيبسوم هو ببساطة نص شكلي</h4>
+                      <p>لوريم إيبسوم هو ببساطة نص شكلي (بمعنى أن
+                        الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر.
+                        كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر
+                        عندما قامت مطبعة
+                      </p>
+                      <time datetime="السبت 12/9/2026">السبت 12/9/2026</time>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </section>
+          </div>
+          <div class="col-md-4"></div>
+          <div class="more-results text-center">
+            <button class="btn btn--custom">المزيد من النتائج</button>
+          </div>
+          <hr>
+        </div>
+      </div>
+    </div>
   </main>
-    <footer>
+  <footer>
     <div class="container">
       <div class="row">
         <div class="col-md-3 col-sm-6">
