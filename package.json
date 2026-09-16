@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "watch": "sass --watch src/sass/style.scss src/css/style.css",
-    "watch2": "sass --watch src/sass/pages/Article.scss src/css/article.css",
-    "watch3": "sass --watch src/sass/pages/search.scss src/css/search.css"
+    "watch": "sass --watch sass/style.scss css/style.css",
+    "watch2": "sass --watch sass/pages/Article.scss css/article.css",
+    "watch3": "sass --watch sass/pages/search.scss css/search.css"
   }
 }
