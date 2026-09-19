@@ -1,4 +1,10 @@
-
+import './indexPage/config.js';
+import './indexPage/slideComponents.js';
+import './indexPage/slideArticle.js';
+import './indexPage/newsComponents.js';
+import './indexPage/mostReadCard.js'
+import './indexPage/bigMostReadCard.js'
+import './indexPage/opinionsArticles.js'
 document.getElementById("currentYear").innerHTML = new Date().getFullYear();
 
 window.addEventListener("scroll", function () {
