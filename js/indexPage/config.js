@@ -103,6 +103,49 @@ export async function fetchopinionArticle() {
 }
 
 
+export async function fetchvideos() {
+  let res = await fetch(API_URL + 'videos');
+  let data = await res.json();
+
+  data.map(vid =>{
+
+    const el = document.createElement('videos-slide');
+
+    el.setAttribute('vid-src', vid.img_uri);
+    el.setAttribute('vid-href', vid.link);
+    el.setAttribute('vid-title', vid.title);
+    el.classList.add('swiper-slide');
+    document.getElementById('videoSlider').appendChild(el);
+  });
+}
+
+export async function fetchlatestnews() {
+  let res = await fetch(API_URL + 'latest-news');
+  let data = await res.json();
+
+  
+    for(let i = 0; i < data.length; i++){
+    const el = document.createElement('latest-news-cards');
+    el.setAttribute('card-src', data[i].img_uri);
+    el.setAttribute('card-href', data[i].link);
+    el.setAttribute('card-title', data[i].title);
+    el.setAttribute('card-category', data[i].category);
+    el.setAttribute('position', data[i].position)
+    
+
+      if(data[i].position == "right"){
+        el.setAttribute('excerpt', data[i].paragraph);
+        document.getElementById('latest-news-big').appendChild(el);
+      }else if(data[i].position == "side") {
+        document.getElementById('latest-news-verticle').appendChild(el); 
+      }else if((data[i].position == "bottom")) {
+        el.classList.add('col-sm-6')
+        document.getElementById('latest-news-small').appendChild(el);
+      }
+    }
+}
+
+
 
 
 fetchSlider();
@@ -114,3 +157,8 @@ fetchnews();
 fetchmostreadcard();
 
 fetchopinionArticle();
+
+fetchvideos();
+
+fetchlatestnews();
+
