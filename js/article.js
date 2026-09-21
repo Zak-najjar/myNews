@@ -1,6 +1,9 @@
-import './searchPage/config.js';
-import './searchPage/searchArticle.js';
-
+import './articlePage/config.js';
+import './articlePage/sideMostRead.js';
+import './articlePage/articles.js';
+import './articlePage/suggestedArticle.js';
+import './articlePage/commentsArticle.js';
+import './articlePage/relatedArticle.js';
 
 document.getElementById("currentYear").innerHTML = new Date().getFullYear();
 

@@ -108,7 +108,6 @@ export async function fetchvideos() {
   let data = await res.json();
 
   data.map(vid =>{
-
     const el = document.createElement('videos-slide');
 
     el.setAttribute('vid-src', vid.img_uri);

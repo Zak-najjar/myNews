@@ -32,7 +32,7 @@ class searchArticle extends HTMLElement {
     this.querySelector('img').setAttribute('src', this.getAttribute('bag-src'));
     this.querySelector('p').innerText = this.getAttribute('excerpt');
     this.querySelector('time').setAttribute('datetime', this.getAttribute('bag-time'));
-    this.querySelector('time').innerHTML = this.getAttribute('bag-time');
+    this.querySelector('time').innerText = this.getAttribute('bag-time');
 
     }
   }
